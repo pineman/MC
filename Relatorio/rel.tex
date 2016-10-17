@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \graphicspath{ {imagens/} }
 \usepackage{epstopdf}
-\usepackage{float} 
+\usepackage{float}
 
 \usepackage{scalerel}
 \usepackage{mathtools}
@@ -32,9 +32,9 @@
 \usepackage{pdfpages}
 
 \begin{document}
-	
 
-\includepdf[pages={1}]{capa/capa.pdf}
+
+\includepdf[pages={1}]{capa.pdf}
 
 \section{Pergunta 1}
 \begin{equation}
@@ -47,7 +47,7 @@
 	h''(\lambda) = 2\tau^2\cosh(\tau\lambda) = -\tau^2(e^{\tau\lambda} + e^{-\tau\lambda})
 \end{equation}
 
-Analisemos o sinal de $h''(\lambda)$: 
+Analisemos o sinal de $h''(\lambda)$:
 \begin{equation}
 	e^{\tau\lambda} + e^{-\tau\lambda} > 0 \implies h''(\lambda) < 0
 \end{equation}
@@ -57,7 +57,7 @@ $h'(\lambda)$ tem no maximo duas raizes.
 
 \begin{equation}
 \begin{split}
-	\lim_{x \to +\infty} h(\lambda) 
+	\lim_{x \to +\infty} h(\lambda)
 	&= \lim_{x \to +\infty} (\lambda + 15.5 - 2\cosh(\lambda)) \\
 	&= \lim_{x \to +\infty} e^{\tau\lambda} \bigg(\frac{\lambda}{e^{\tau\lambda}} + \frac{15.5}{e^{\tau\lambda}} - \frac{2\cosh(\lambda)}{e^{\tau\lambda}}\bigg) \\
 	&= e^{+\infty} (0 + 0 - 1) = -\infty
@@ -67,7 +67,7 @@ $h'(\lambda)$ tem no maximo duas raizes.
 Analogamente para  $-\infty$ :
 \begin{equation}
 \begin{split}
-	\lim_{x \to -\infty} h(\lambda) 
+	\lim_{x \to -\infty} h(\lambda)
 	&= \lim_{x \to -\infty} (\lambda + 15.5 - 2\cosh(\lambda)) \\
 	&= \lim_{x \to -\infty} e^{-\tau\lambda} \bigg(\frac{\lambda}{e^{-\tau\lambda}} + \frac{15.5}{e^{-\tau\lambda}} - \frac{2\cosh(\lambda)}{e^{-\tau\lambda}}\bigg) \\
 	&= e^{+\infty} (0 + 0 - 1) = -\infty

@@ -1,4 +1,9 @@
-CC=pdflatex
+TEX=pdflatex
 
 make:
-	$(CC) Modelo.tex
+	$(TEX) capa.tex
+	$(TEX) rel.tex
+	rm -rf *.aux *.log capa.pdf
+
+clean:
+	rm -rf rel.pdf
