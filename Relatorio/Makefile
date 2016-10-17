@@ -1,9 +1,10 @@
 TEX=pdflatex
 
 make:
-	$(TEX) capa.tex
+	cd ./capa && $(TEX) capa.tex
 	$(TEX) rel.tex
-	rm -rf *.aux *.log capa.pdf
+	rm -rf *.aux *.log 
+	cd ./capa && rm -rf *.aux *.log IST_Logo-eps-converted-to.pdf capa.pdf
 
 clean:
 	rm -rf rel.pdf
