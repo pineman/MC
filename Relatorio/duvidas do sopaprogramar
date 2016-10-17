@@ -1,0 +1,13 @@
+Isto é muito engraçado... Mas ainda não percebo nada disto :P
+
+Duas coisas: o Teorema de Rolle acho que não é o que queremos... esse teorema dizia que SE a derivada não se anular num determinado
+intervalo, então a função só pode ter, NO MÁXIMO, uma raíz. O que faz todo o sentido... é equivalente a dizer, se a função não para de 
+crescer (ou decrescer) num intervalo, então só pode cruzar o eixo do x uma vez no máximo. (Claro, depois continua a crescer(ou a decrescer))
+
+Amanhã de manhã tento por aqui as coisas que escrevi no metro sobre MC. São um bocado extensas mas acho que não se lêem mal...
+Se concordares com o que escrevi, posso resumir bastante para não ficar uma seca no latex
+Entretanto, depois de ver o makefile tenho dúvidas... o Latex é uma espécie de linguagem de programação que compilas e sai um pdf? xD
+Usas algo mais interativo que um simples editor de texto para o Latex? Ou tens que abrir e fechar cada nest? Já não me lembro como fazíamos 
+a portfólio... :P
+
+Depois se me conseguires dizer o que é fazer commit a um novo branch, também é fixe.. por agora vou mandar tudo para o master
