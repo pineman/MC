@@ -1,1 +1,4 @@
-# MC
+# Trabalho computaciona de MC
+
+##TODO:
+  Everything
