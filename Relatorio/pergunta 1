@@ -1,0 +1,67 @@
+h(A) = A + 15.5 - 2cosh(AT)
+
+Fixando um T > 0, a segunda derivada da função é igual
+h⁽²⁾(A) = -2T²cosh(AT) 
+e é sempre menor que zero. Sendo cosh(AT) sempre > 0, para todo o A 
+pertencente aos reais, multiplicado a uma constante -T² o resultado 
+será sempre menor que zero.
+
+
+Daqui podemos partir para dois caminhos equivalentes.
+
+1º- Como a segunda derivada é sempre menor que zero, então, 
+a concavidade da função é sempre negativa. E para funções que é esse
+o caso, nos reais, podemos sempre dizer que têm, no máximo, 2 raízes reais.
+Tendo um máximo num determinado ponto, podemos ter 3 casos diferentes:
+-ou esse ponto é = 0 e esse é o único zero da função;
+-ou esse ponto é > 0 e a função cruza(pode ou cruza de certeza?) 
+o eixo das abcisas em dois pontos diferentes;
+-ou esse ponto é < 0 e a função não volta a ter um valor maior que esse,
+e, por isso, não tem nenhum zero no seu domínio.
+
+Assim, basta ver em que caso estamos. Ou a função muda de valores
+positivos para negativos e vice-versa 2 vezes e temos 2 zeros e conseguimos
+encontrar 3 pontos cujo o do meio é positivo e os outros dois negativos
+e provamos o que o exercício quer, ou então vamos ter resultados diferentes.
+
+Fazendo o limite A para -infinito vamos ter um valor negativo.
+O mesmo para +infinito.
+Para A = 0, temos o valor de 14.5 que é positivo. Assim, como já sabemos
+que a função tem no máximo dois zeros, se muda de valores negativos para positivos
+entre -infinito e 0 e de valores positivos para negativos entre 0 e mais infinito, então,
+por a função ser a composição de funções contínuas e por isso ser continua também e
+pelo teorema de Bolzano, podemos garantir a existência de duas raízes nesses intervalos.
+
+Dependendo de T logo podemos específicar melhor esses valores, até sabermos T, 
+não o podemos fazer pois haverá sempre um T tal que, com A fixo, a função não tenha as raízes que
+dissemos que tinha. Assim, depois de fixado um T, podemos garantir sempre que tal acontece.
+(os limites foram resolvidos apoiados na permissa de que T era fixo. Se T não o for, pode acontecer
+tender para 0 e teríamos indeterminações em vez de resultados)
+
+
+2º A segunda forma de verificar que tem dois zeros, é associando a segunda
+derivada a uma derivada da primeira. Como a segunda derivada é sempre menor
+que 0, então a primeira derivada TEM que sem sempre decrescente. Sendo sempre decrescente,
+só pode cruzar, no máximo, o eixo das abcissas uma vez. E é se o fizer, porque pode ser sempre decrescente
+e nunca o cruzar.
+Para A = 0 encontramos um zero da derivada. Um zero da derivada ou significa um ponto de inflexão ou um 
+extremo, dependendo da segunda derivada. Como a segunda derivada tem valores sempre negativos, é impossível
+haver um ponto de inflexão e esse ponto é então um extremo.
+Verificando o valor da função para esse ponto, obtemos um valor positivo de 14.5.
+Assim, sabendo que esse é um extremo, só temos que encontrar dois pontos, um mais à esquerda e outro mais à direita
+tal que a função tenha valores negativos nesses pontos, assim, podemos
+provar que ela cruza o eixo do x duas vezes, pois, como tínhamos dito, é uma função
+contínua e funções contínuas não passam de valores a outros sem passarem em todos os intermédios...
+Em caso de dúvida, pode-se aplicar o teorema de Bolzano e confirmar isso.
+Batemos na parede de ter que ter um T fixo para não nos habilitarmos a considerar um ponto em que para T pertencente
+a um certo intervalo corre tudo bem, que existem T's > 0 que não pertencem a esse intervalo e deitam a nossa permissa a baixo.
+Assim, para não perdermos generalidade, em vez de considerarmos pontos, consideramos limites, como A-> -infinito e A-> +infinito
+Desta forma, para qualquer T fixo > 0, podemos garantir a aplicabilidade do teorema de Bolzano.
+
+NOTA IMPORTANTE: é preciso arranjar uma condição, para que isto funcione, em função de um T escolhido.)
+  
+Como já tínhamos o extremo, entre esse e o ponto escolhido situam-se as duas raízes, uma maior que zero e outra menor que 0, porque é em 0
+que se situa o extremo que consideramos.
+
+Fica então provado tudo o que precisamos de provar para avançar.
+
