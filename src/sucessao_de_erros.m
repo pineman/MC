@@ -5,7 +5,6 @@ function k = sucessao_de_erros(lambda_n, p)
     for n = lambda_n(1:(end))
         erro = [erro abs(n - z1)];
     end
-    erro
 
     k = [];
     j = 1;
