@@ -25,6 +25,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 
+\DeclareMathSizes{20}{10}{10}{10}
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{0.5pt}
 
@@ -37,6 +38,7 @@
 \usepackage{pdfpages}
 
 \begin{document}
+
 
 \includepdf[pages={1}]{capa/capa.pdf}
 
@@ -154,27 +156,48 @@
 	Programa em anexo.
 \subsection*{d)}
 
-\begin{table}[]
+\begin{table}[H] \label{pto_fixo}
 \setlength{\tabcolsep}{0.5cm} %padding das colunas
 \renewcommand{\arraystretch}{1.5} %padding das linhas
 \centering
-\caption{Tabela 1: Metodo do ponto fixo}
+\caption{Metodo do ponto fixo}
 \label{my-label}
 \begin{tabular}{|c|c|c|}
  $n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
- 1& 3.000000000000000 & 0.138610566606898  \\
- 2& -3.138610566606898 & 0.138610566606898 \\
- 3& -3.135043175725743 & 0.003567390881155 \\
- 4& -3.135319148437489 & 0.000275972711746 \\
- 5& -3.135298158933368 & 0.000020989504121 \\
- 6& -3.135299757437974 & 0.000001598504606 \\
- 7& -3.135299635712395 & 0.000000121725579 \\
-
-
+ 0& -3.000000000000000 & -  \\
+ 1& -3.138610566606898 & 0.138610566606898 \\
+ 2& -3.135043175725743 & 0.003567390881155 \\
+ 3& -3.135319148437489 & 0.000275972711746 \\
+ 4& -3.135298158933368 & 0.000020989504121 \\
+ 5& -3.135299757437974 & 0.000001598504606 \\
+ 6& -3.135299635712395 & 0.000000121725579 \\
 \end{tabular}
 \end{table}
+
 \subsection*{e)}
 \subsubsection*{i.)}
+
+\begin{table}[H] \label{convergencia}
+\setlength{\tabcolsep}{0.5cm} %padding das colunas
+\renewcommand{\arraystretch}{1.5} %padding das linhas
+\centering
+\caption{Convergencia}
+\label{my-label}
+\begin{tabular}{c|c|c|c}
+
+%TODO: porque e que os valors em 0 e em 1 são iguais
+ $n$ & $\frac{|e_{n+1}|}{|e_n|^{1/2}}$ &  $\frac{|e_{n+1}|}{|e_n|}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
+ 0& 0.009001228832727  & 0.024471099844949 & 0.000180865969935 \\
+ 1& 0.009001228832727  & 0.024471099844949 & 0.000180865969935 \\
+ 2& 0.004457019736082  & 0.077458574287344 & 0.023394802475624 \\
+ 3& 0.001218451139231  & 0.076084871362003 & 0.296673459104577 \\
+ 4& 0.000334315531198  & 0.075682869509848 & 3.878641714344468 \\
+ 5&  &  & \\
+ 6&  &  & \\
+\end{tabular}
+\end{table}
+
+
 \subsubsection*{ii.)}
 \subsection*{f)}
 
