@@ -1,21 +1,20 @@
 function k = sucessao_de_erros(lambda_n, p)
-	z = lambda_n(end);
-    erro = abs(lambda_n(1) - z);
-
-    for n = lambda_n(2:(end-1))
-        erro = [erro abs(n - z)];
+	z1 = lambda_n(end);
+    erro = [];
+    
+    for n = lambda_n(1:(end))
+        erro = [erro abs(n - z1)];
     end
-    %disp(erro)
+    erro
 
-    k = erro(2) / (erro(1)^p);
-    j = 0;
-    for i = erro(2:(end-1))
-        j = j + 1;
+    k = [];
+    j = 1;
+    for i = erro(1:(end-1))
         k = [k (erro(j+1) / (erro(j)^p))];
+        j = j + 1;
     end
 
 %     for i = erro(2:(end-1)), j = erro(3:(end))
 %         k = [k (j / i^p)];
 %     end
-
 end
