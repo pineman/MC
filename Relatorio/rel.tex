@@ -144,63 +144,82 @@
 	\end{split}
 	\end{equation}
 
-	% TODO
-	TODO: what if g'(z2) = 1 ???
 	\par
 	De \eqref{2a_cres} vem que $g(\lambda)$ apenas pode intersetar a reta $y = x$ se $g'(\lambda) \geqslant 1$ para $\lambda > 0$.
 
-
+	% TODO: explicação menos mínima e incluir resultados do Morais
 \subsection*{b)}
+	% TODO: parecida com a a) pelo método do Morais
+
 \subsection*{c)}
 	Programa em anexo.
-\subsection*{d)}
 
-\begin{table}[H] \label{pto_fixo}
-\setlength{\tabcolsep}{0.5cm} %padding das colunas
-\renewcommand{\arraystretch}{1.5} %padding das linhas
-\centering
-\caption{Metodo do ponto fixo}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
- $n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
- 0& -3.000000000000000 & -  \\
- 1& -3.138610566606898 & 0.138610566606898 \\
- 2& -3.135043175725743 & 0.003567390881155 \\
- 3& -3.135319148437489 & 0.000275972711746 \\
- 4& -3.135298158933368 & 0.000020989504121 \\
- 5& -3.135299757437974 & 0.000001598504606 \\
- 6& -3.135299635712395 & 0.000000121725579 \\
-\end{tabular}
-\end{table}
+\subsection*{d)}
+	\begin{table}[H]
+		\setlength{\tabcolsep}{0.5cm} %padding das colunas
+		\renewcommand{\arraystretch}{1.5} %padding das linhas
+		\centering
+		\caption{Iteradas do método do ponto fixo \eqref{2a}}
+		\label{2d_table}
+		\begin{tabular}{|c|c|c|}
+			$n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
+			0& -3.000000000000000 & -  \\
+			1& -3.138610566606898 & 0.138610566606898 \\
+			2& -3.135043175725743 & 0.003567390881155 \\
+			3& -3.135319148437489 & 0.000275972711746 \\
+			4& -3.135298158933368 & 0.000020989504121 \\
+			5& -3.135299757437974 & 0.000001598504606 \\
+			6& -3.135299635712395 & 0.000000121725579 \\
+		\end{tabular}
+	\end{table}
 
 \subsection*{e)}
-\subsubsection*{i.)}
+	\subsubsection*{i.)}
 
-\begin{table}[H] \label{convergencia}
-\setlength{\tabcolsep}{0.5cm} %padding das colunas
-\renewcommand{\arraystretch}{1.5} %padding das linhas
-\centering
-\caption{Convergencia}
-\label{my-label}
-\begin{tabular}{c|c|c|c}
-
-TODO: porque e que os valors em 0 e em 1 são iguais
- $n$ & $\frac{|e_{n+1}|}{|e_n|^{1/2}}$ &  $\frac{|e_{n+1}|}{|e_n|}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
- 0& 0.009001228832727  & 0.024471099844949 & 0.000180865969935 \\
- 1& 0.009001228832727  & 0.024471099844949 & 0.000180865969935 \\
- 2& 0.004457019736082  & 0.077458574287344 & 0.023394802475624 \\
- 3& 0.001218451139231  & 0.076084871362003 & 0.296673459104577 \\
- 4& 0.000334315531198  & 0.075682869509848 & 3.878641714344468 \\
- 5&  &  & \\
- 6&  &  & \\
-\end{tabular}
-\end{table}
+	\begin{table}[H]
+		\setlength{\tabcolsep}{0.5cm} %padding das colunas
+		\renewcommand{\arraystretch}{1.5} %padding das linhas
+		\centering
+		\caption{Sucessão de erros para ordem de convergência p}
+		%\label{}
+		\begin{tabular}{c|c|c|c}
+			$n$ & $\frac{|e_{n+1}|}{|e_n|^{1/2}}$ &  $\frac{|e_{n+1}|}{|e_n|}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
+			0 & 0.000018086596993e4 & 0.024471099844945 & 0.009001228832726 \\
+			1 & 0.002339480247567e4 & 0.077458574287488 & 0.004457019736090 \\
+			2 & 0.029667345911030e4 & 0.076084871363603 & 0.001218451139258 \\
+			3 & 0.387864171416792e4 & 0.075682869508125 & 0.000334315531194 \\
+			4 & 5.581498558226427e4 & 0.082426400103842 & 0.000100166867144 \\
+			5 & 0                   & 0                 & 0 \\
+		\end{tabular}
+	\end{table}
 
 
 \subsubsection*{ii.)}
 \subsection*{f)}
 
 \section{Pergunta 3}
+\subsection*{a)}
+
+	% TODO: tabela como 2.a)
+	\begin{table}[H]
+		\setlength{\tabcolsep}{0.5cm} %padding das colunas
+		\renewcommand{\arraystretch}{1.5} %padding das linhas
+		\centering
+		\caption{Iteradas do método do ponto fixo \eqref{2a}}
+		\label{}
+		\begin{tabular}{|c|c|c|}
+			$n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
+			0& -3.000000000000000 & -  \\
+			1& -3.138610566606898 & 0.138610566606898 \\
+			2& -3.135043175725743 & 0.003567390881155 \\
+			3& -3.135319148437489 & 0.000275972711746 \\
+			4& -3.135298158933368 & 0.000020989504121 \\
+			5& -3.135299757437974 & 0.000001598504606 \\
+			6& -3.135299635712395 & 0.000000121725579 \\
+		\end{tabular}
+	\end{table}
+
+\subsection*{b)}
 
 \section{Pergunta 4}
 
