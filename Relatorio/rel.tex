@@ -14,6 +14,7 @@
 \usepackage{indentfirst}
 \usepackage{mathtools}
 \usepackage{amsmath}
+\allowdisplaybreaks
 \usepackage{cleveref}
 \usepackage{amssymb}
 \newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
@@ -46,13 +47,9 @@
 		h(\lambda) = \lambda + 15.5 - 2\cosh(\lambda\tau)
 	\end{equation}
 
-	\begin{equation}
-		h'(\lambda) = 1 - 2\sinh(\tau\lambda) = 1 - \tau(e^{\tau\lambda} - e^{-\tau\lambda})
-	\end{equation}
+	$$h'(\lambda) = 1 - 2\sinh(\tau\lambda) = 1 - \tau(e^{\tau\lambda} - e^{-\tau\lambda})$$
 
-	\begin{equation}
-		h''(\lambda) = -2\tau^2\cosh(\tau\lambda) = -\tau^2(e^{\tau\lambda} + e^{-\tau\lambda})
-	\end{equation}
+	$$h''(\lambda) = -2\tau^2\cosh(\tau\lambda) = -\tau^2(e^{\tau\lambda} + e^{-\tau\lambda})$$
 
 	\par
 	Analisemos o sinal de $h''(\lambda)$:
@@ -67,49 +64,43 @@
 	Pelo Teorema de Rolle e pela inequação \eqref{eq:1_2nd_der_sign} podemos afirmar que
 	$h(\lambda)$ tem no máximo duas raízes. Provemos que $h(\lambda)$ tem no mínimo duas raízes sem perda de generalidade.
 
-	\begin{equation}
-		h(0) = 0 + 15.5 - 2\cosh(0\tau) = 13.5 > 0
-	\end{equation}
+	$$h(0) = 0 + 15.5 - 2\cosh(0\tau) = 13.5 > 0$$
 
-	\begin{equation}
-	\begin{split}
+	\begin{align*}
 		\lim_{x \to +\infty} h(\lambda)
 		&= \lim_{x \to +\infty} (\lambda + 15.5 - 2\cosh(\lambda)) \\
 		&= \lim_{x \to +\infty} e^{\tau\lambda} \bigg(\frac{\lambda}{e^{\tau\lambda}} + \frac{15.5}{e^{\tau\lambda}} - \frac{2\cosh(\lambda)}{e^{\tau\lambda}}\bigg) \\
 		&= e^{+\infty} (0 + 0 - 1) = -\infty < 0
-	\end{split}
-	\end{equation}
+	\end{align*}
 
 	\par
 	Analogamente para  $-\infty$ :
 
-	\begin{equation}
-	\begin{split}
+	\begin{align*}
 		\lim_{x \to -\infty} h(\lambda)
 		&= \lim_{x \to -\infty} (\lambda + 15.5 - 2\cosh(\lambda)) \\
 		&= \lim_{x \to -\infty} e^{-\tau\lambda} \bigg(\frac{\lambda}{e^{-\tau\lambda}} + \frac{15.5}{e^{-\tau\lambda}} - \frac{2\cosh(\lambda)}{e^{-\tau\lambda}}\bigg) \\
 		&= e^{+\infty} (0 + 0 - 1) = -\infty < 0
-	\end{split}
-	\end{equation}
+	\end{align*}
 
 	\par
 	Assim, como $h(\lambda)$ é contínua, pelo teorema de Bolzano conclui-se que $h(\lambda)$ tem no mínimo duas raízes, uma positiva e uma negativa. Logo, como $h(\lambda)$ tem no máximo duas raízes, tem exatamente duas raízes.
 	\par
 	Se $\tau = 0$:
-	\begin{equation}
-	\begin{split}
+
+	\begin{align*}
 		h(\lambda) &= \lambda + 13.5 = 0 \Leftrightarrow \\
 		\Leftrightarrow h &= -13.5
-	\end{split}
-	\end{equation}
+	\end{align*}
+
 	\par
 	Por outro lado, se $\tau$ for muito grande, existirá sempre um $\lambda$ arbritariamente perto de $0^-$ tal que:
-	\begin{equation}
-	\begin{split}
+
+	\begin{align*}
 		\lambda + 15.5 &= 2cosh(\lambda\tau) \Leftrightarrow \\
 		\Leftrightarrow h(\lambda) &= 0, \lambda < 0
-	\end{split}
-	\end{equation}
+	\end{align*}
+
 	\par
 	Assim, a raiz negativa estará contida no intervalo $]-13.5, 0[, \forall \tau > 0$.
 
@@ -127,29 +118,113 @@
 	A raiz positiva $z_2$ de \eqref{init} equivale a um ponto fixo de \eqref{2a} e será do tipo repulsor sse:
 	$$|g'(z_2)| > 1$$
 
-	\begin{equation}
-		g'(\lambda) = 0.9 + 0.16sinh(0.8\lambda)
-	\end{equation}
+	\par
+	Analisemos as derivadas da função iteradora $g(\lambda)$:
+	$$g'(\lambda) = 0.9 + 0.16sinh(0.8\lambda)$$
 
 	\begin{equation} \label{2a_2nd_der}
 		g''(\lambda) = 0.128cosh(0.8\lambda) > 0, \forall \lambda
 	\end{equation}
 
 	\par
-	De \eqref{2a_2nd_der} vem que $g'(\lambda)$ é estritamente crescente.
-	\begin{equation} \label{2a_cres}
-	\begin{split}
+	De \eqref{2a_2nd_der} vem que $g'(\lambda)$ é estritamente crescente e que $g(\lambda)$ tem a concavidade virada para cima, $\forall \lambda$.
+
+	\begin{align*}
+		g(0) &< 0 \\
 		g'(0) &> 0 \\
-		g(0) &< 0
+		g''(0) &\neq 0
+	\end{align*}
+
+	% Explicação alternativa
+	%\par
+	%Em $\lambda = 0$ a função iteradora $g(\lambda)$ é negativa, mas a sua derivada já é positiva. Como a segunda derivada é sempre positiva, concluímos que $g(\lambda)$ em $\lambda = 0$ já está a crescer e continuará assim $\forall \lambda > 0$.
+	%\par
+	%Como a função é negativa nesse ponto, conclui-se que a única maneira de $g(\lambda)$ intersetar a reta $y = x$ (e assim ter um ponto fixo positivo $z_2$ raiz da equação \eqref{init}) é se ultrapassar o ritmo de crescimento da reta $y = x$, ou seja, se $g'(\lambda) > 1$ para algum $\lambda_0$ tal que $0 < \lambda_0 < z_2$. Como $g'(\lambda)$ é estritamente crescente, para $\lambda \geqslant \lambda_0$ então $g'(\lambda) > 1 $. Deste modo, o ponto fixo $z_2$ será repulsor.
+
+	% Explicação do Morais
+	\par
+	\vspace{.5cm}
+	Para $\lambda > 0$, temos as seguintes condições:
+
+	\begin{align*}
+		|g'(\lambda)| &> 1 \Leftrightarrow \\ &\Leftrightarrow
+		(g'(\lambda) < -1 \vee g'(\lambda) > 1) \wedge \lambda > 0 \Leftrightarrow \\ &\Leftrightarrow
+		(\lambda < \lambda_1 \vee \lambda > \lambda_2) \wedge \lambda > 0 \stepcounter{equation}\tag{\theequation}\label{2a_cond}
+	\end{align*}
+
+	\par
+	Calculemos os pontos $\lambda_1$ e $\lambda_2$ que satisfaçam as condições em \eqref{2a_cond}.
+
+	\begin{align*} % split não permite page breaks
+		g'(\lambda_1) &= -1 \Leftrightarrow \\ &\Leftrightarrow
+		0.9 + 0.16sinh(0.8\lambda_1) = -1 \Leftrightarrow \\ &\Leftrightarrow
+		0.08(e^{0.8\lambda_1} - e^{-0.8\lambda_1}) = -1.9 \Leftrightarrow (w = e^{0.8\lambda_1}) \\ &\Leftrightarrow
+		w - w^{-1} = \frac{-1.9}{.08} = -23.75 \Leftrightarrow \\ &\Leftrightarrow
+		w.w - 23.75.w - w^{-1}.w = 0 \Leftrightarrow \\ &\Leftrightarrow
+		w^2 + 23.75w - 1 = 0 \Leftrightarrow \\ &\Leftrightarrow
+		w = \frac{-95 + \sqrt{9089}}{8} \vee w = \frac{-95 - \sqrt{9089}}{8} \Leftrightarrow \\ &\Leftrightarrow
+		w \approx 0.04203 \vee w \approx -23.792 \text{  (impossível, $w = e^{0.8\lambda_1}$)} \Leftrightarrow \\ &\Leftrightarrow
+		e^{0.8\lambda_1} = \frac{\sqrt{9089} - 95}{8} \Leftrightarrow \\ &\Leftrightarrow
+		\lambda_1 = \frac{ln(\frac{\sqrt{9089} - 95}{8})}{0.8} \Leftrightarrow \\ &\Leftrightarrow
+		\lambda_1 \approx -3.96169 \stepcounter{equation}\tag{\theequation}\label{lambda1}
+	\end{align*}
+
+
+	\begin{align*}
+		g'(\lambda_2) &= 1 \Leftrightarrow \\ &\Leftrightarrow
+		0.9 + 0.16sinh(0.8\lambda_2) = 1 \Leftrightarrow \\ &\Leftrightarrow
+		0.16 * \frac{1}{2}(e^{0.8\lambda_2} - e^{-0.8\lambda_2}) = 0.1 \Leftrightarrow \\ &\Leftrightarrow
+		w - w^{-1} = \frac{0.1}{0.08} = 1.25 \Leftrightarrow \\ &\Leftrightarrow
+		w.w - 1.25.w - w^{-1}.w = 0 \Leftrightarrow \\ &\Leftrightarrow
+		w^2 - 1.25w - 1 = 0 \Leftrightarrow \\ &\Leftrightarrow
+		w = \frac{5 + \sqrt{89}}{8} \vee w = \frac{5 - \sqrt{89}}{8} \Leftrightarrow \\ &\Leftrightarrow
+		w \approx 1.804 \vee w \approx -0.554 \text{  (impossível, $w = e^{0.8\lambda_2}$)} \Leftrightarrow \\ &\Leftrightarrow
+		e^{0.8\lambda_2} = \frac{5 + \sqrt{89}}{8} \Leftrightarrow \\ &\Leftrightarrow
+		\lambda_2 = \frac{ln(\frac{5 + \sqrt{89}}{8})}{0.8} \Leftrightarrow \\ &\Leftrightarrow
+		\lambda_2 \approx 0.73786 \stepcounter{equation}\tag{\theequation}\label{lambda2}
+	\end{align*}
+
+	\par
+	Completando as condições em \eqref{2a_cond} com \eqref{lambda1} e \eqref{lambda2}:
+
+	\begin{align*}
+		&|g'(\lambda)| > 1 \Leftrightarrow \\ \Leftrightarrow
+		&(\lambda < -3.96169 \vee \lambda > .073768) \wedge \lambda > 0 \Leftrightarrow \\ \Leftrightarrow
+		&\lambda > .073768
+	\end{align*}
+
+	\par
+	Assim, para provar que o ponto fixo $z_2$ é repulsor, basta-nos provar que $z_2 > \lambda_2$.
+
+	\begin{equation} \label{2a_bolz}
+	\begin{split}
+		g(0) < 0
+		g(\lambda_2) = g(.073768) \approx -0.65006
 	\end{split}
 	\end{equation}
 
 	\par
-	De \eqref{2a_cres} vem que $g(\lambda)$ apenas pode intersetar a reta $y = x$ se $g'(\lambda) \geqslant 1$ para $\lambda > 0$.
+	% TODO: podemos utilizar f() [usada originalmente pelo Morais] ou g()
+	% TODO: incluir gráficos?
+	Recorrendo ao Teorema de Bolzano, de \eqref{2a_bolz} sai que o ponto fixo $z_2$ tem que ser maior que $\lambda_2$, pois nesse ponto a função $g(\lambda)$ ainda se encontra abaixo da reta $y = x$. Sabemos que $z_2$ não pode pertencer ao intervalo $[0, \lambda_2]$ porque pelas suas derivadas se $\lambda > 0$ então $g(\lambda)$ é estritamente crescente.
 
-	% TODO: explicação menos mínima e incluir resultados do Morais
 \subsection*{b)}
-	% TODO: parecida com a a) pelo método do Morais
+	\par
+	Analogamente a 2.a), se encontrarmos um intervalo $I$ para $\lambda < 0$ tal que $|g'(\lambda)| < 1, \forall \lambda \in I \wedge \lambda_0 \in I$, sabemos que o método do ponto fixo começando em $\lambda_0$ vai convergir para a raiz negativa $z_1$, sendo este um ponto fixo atrator.
+
+	\par
+	Sabemos que no intervalo $[\lambda_1, 0] = I$:
+		$$|g'(\lambda)| < 1, \forall \lambda \in I$$
+
+	\par
+	Assim, resta provar que $g(\lambda)$ tem um ponto fixo no intervalo $I$, ou seja, interseta a reta $y = x$ para algum $\lambda \in I$.
+
+	\begin{align*}
+		g(0) &< 0 \\
+		g(\lambda_1) = g(-3.96169) &\approx -2.6926708
+	\end{align*}
+
+	Claramente $\lambda_0 = -3 \in I$. Como $\lambda_1 > g(\lambda_1)$, este ponto econtra-se na região $y > x$, ou seja, à "esquerda" da reta $y = x$. Como $g(0) < 0$, este ponto encontra-se na região $y < x$, ou seja, à "direita" da reta $y = x$. Como $g(\lambda)$ é contínua, garante-se que esta função interseta a reta $y = x$ para $\lambda \in I$, logo, tem um ponto fixo atrator no intervalo $I$ e o método do ponto fixo $g(\lambda)$ converge para a raiz negativa $z_1$ começando em $\lambda_0 = -3$.
 
 \subsection*{c)}
 	Programa em anexo.
@@ -180,19 +255,28 @@
 		\setlength{\tabcolsep}{0.5cm} %padding das colunas
 		\renewcommand{\arraystretch}{1.5} %padding das linhas
 		\centering
-		\caption{Sucessão de erros para ordem de convergência p}
-		%\label{}
+		\caption{Sucessão de erros para ordem de convergência $p = \frac{1}{2}, 1, 2$}
+		\label{2e_table}
 		\begin{tabular}{c|c|c|c}
-			$n$ & $\frac{|e_{n+1}|}{|e_n|^{1/2}}$ &  $\frac{|e_{n+1}|}{|e_n|}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
+			$n$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
 			0 & 0.000018086596993e4 & 0.024471099844945 & 0.009001228832726 \\
 			1 & 0.002339480247567e4 & 0.077458574287488 & 0.004457019736090 \\
 			2 & 0.029667345911030e4 & 0.076084871363603 & 0.001218451139258 \\
 			3 & 0.387864171416792e4 & 0.075682869508125 & 0.000334315531194 \\
 			4 & 5.581498558226427e4 & 0.082426400103842 & 0.000100166867144 \\
 			5 & 0                   & 0                 & 0 \\
+		% TODO: na última linha fica x_6 - x_6 = 0. é suposto ficar assim?
 		\end{tabular}
 	\end{table}
 
+	\par
+	A sucessão de erros que parece convergir para um $K_\infty > 0$ é a coluna de ordem de convergência $p = 1$.
+
+	% TODO: o último termo da sucessão de erros de p = 1 fica mais diferente
+	% de este resultado. Eu mexi no sucessao_de_erros.m para incluir mais
+	% termos (são 6 e antes dava 5) e ainda por cima os primeiros dois eram iguais.
+	% fodi alguma coisa?
+	$$g'(\lambda_n) = -0,076150166$$
 
 \subsubsection*{ii.)}
 \subsection*{f)}
