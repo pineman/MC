@@ -272,19 +272,21 @@
 	\par
 	A sucessão de erros que parece convergir para um $K_\infty > 0$ é a coluna de ordem de convergência $p = 1$.
 
-	% TODO: o último termo da sucessão de erros de p = 1 fica mais diferente
+	% o último termo da sucessão de erros de p = 1 fica mais diferente
 	% de este resultado. Eu mexi no sucessao_de_erros.m para incluir mais
 	% termos (são 6 e antes dava 5) e ainda por cima os primeiros dois eram iguais.
 	% fodi alguma coisa?
-	$$g'(\lambda_n) = -0,076150166$$
+	$$g'(\lambda_n) = -0.076150166$$
 
 \subsubsection*{ii.)}
+	hello hello
+
 \subsection*{f)}
+	hello hello
 
 \section{Pergunta 3}
 \subsection*{a)}
-
-	% TODO: tabela como 2.a)
+	% TODO: Isto tá certo?...
 	\begin{table}[H]
 		\setlength{\tabcolsep}{0.5cm} %padding das colunas
 		\renewcommand{\arraystretch}{1.5} %padding das linhas
@@ -293,15 +295,21 @@
 		\label{}
 		\begin{tabular}{|c|c|c|}
 			$n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
-			0& -3.000000000000000 & -  \\
-			1& -3.138610566606898 & 0.138610566606898 \\
-			2& -3.135043175725743 & 0.003567390881155 \\
-			3& -3.135319148437489 & 0.000275972711746 \\
-			4& -3.135298158933368 & 0.000020989504121 \\
-			5& -3.135299757437974 & 0.000001598504606 \\
-			6& -3.135299635712395 & 0.000000121725579 \\
+			0 & 3.000000000000000  & -  \\
+			1 & 2.046457864822351  & 0.953542135177649 \\
+   			2 & 6.176319696392767  & 4.12986183157042 \\
+   			3 & 5.110330190541037  & 1.06598950585173 \\
+   			4 & 4.274219056427226  & 0.836111134113811 \\
+   			6 & 3.812580580130441  & 0.461638476296785 \\
+   			7 & 3.695808274249095  & 0.116772305881346 \\
+   			8 & 3.689565626643406  & 0.00624264760568893 \\
+   			9 & 3.689548798887311  & 1.68277560947949e-05 \\
+   			10 & 3.689548798765438 & 1.21873178215992e-10
 		\end{tabular}
 	\end{table}
+
+	\par
+	O método de Newton convergiu para a raiz positiva, a partir da aproximação inicial $x_0 = 3$ em 9 iterações.
 
 \subsection*{b)}
 
