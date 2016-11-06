@@ -3,7 +3,7 @@
 from math import *
 
 def g7(x):
-    a = -0.1
+    a = 0.05
     try :
         res = x + a * (x + 15.5 - 2*cosh(0.8 * x))
         return res
@@ -43,28 +43,8 @@ def sucessao_erros(lambda_n, p):
 
     return k
 
-#function k = sucessao_de_erros(lambda_n, p)
-#	z1 = lambda_n(end);
-#    erro = [];
-#    
-#    for n = lambda_n(1:(end))
-#        erro = [erro abs(n - z1)];
-#    end
-#
-#    k = [];
-#    j = 1;
-#    for i = erro(1:(end-1))
-#        k = [k (erro(j+1) / (erro(j)^p))];
-#        j = j + 1;
-#    end
-#
-#%     for i = erro(2:(end-1)), j = erro(3:(end))
-#%         k = [k (j / i^p)];
-#%     end
-#end
+#print("p = 1/2:  ", sucessao_erros(ponto_fixo(g7, -3, 10**(-6)), 1/2))
+#print("p = 1:  ", sucessao_erros(ponto_fixo(g7, -3, 10**(-6)), 1))
+#print("p = 2:  ", sucessao_erros(ponto_fixo(g7, -3, 10**(-6)), 2))
 
-print("p = 1/2:  ", sucessao_erros(ponto_fixo(g7, -3, 10**(-6)), 1/2))
-print("p = 1:  ", sucessao_erros(ponto_fixo(g7, -3, 10**(-6)), 1))
-print("p = 2:  ", sucessao_erros(ponto_fixo(g7, -3, 10**(-6)), 2))
-
-
+print(ponto_fixo(g7, 3, 10 ** (-6)))
