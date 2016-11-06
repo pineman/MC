@@ -129,11 +129,11 @@
 	\par
 	De \eqref{2a_2nd_der} vem que $g'(\lambda)$ é estritamente crescente e que $g(\lambda)$ tem a concavidade virada para cima, $\forall \lambda$.
 
-	\begin{align*}
-		g(0) &< 0 \\
-		g'(0) &> 0 \\
-		g''(0) &\neq 0
-	\end{align*}
+	%\begin{align*}
+	%	g(0) &< 0 \\
+	%	g'(0) &> 0 \\
+	%	g''(0) &\neq 0
+	%\end{align*}
 
 	% Explicação alternativa
 	%\par
@@ -198,8 +198,8 @@
 
 	\begin{equation} \label{2a_bolz}
 	\begin{split}
-		g(0) < 0
-		g(\lambda_2) = g(.073768) \approx -0.65006
+		g(0) &< 0 \\
+		g(\lambda_2) = g(.073768) &\approx -0.65006
 	\end{split}
 	\end{equation}
 
@@ -286,17 +286,17 @@
 
 \section{Pergunta 3}
 \subsection*{a)}
-	% TODO: Isto tá certo?...
 	\begin{table}[H]
 		\setlength{\tabcolsep}{0.5cm} %padding das colunas
 		\renewcommand{\arraystretch}{1.5} %padding das linhas
 		\centering
-		\caption{Iteradas do método do ponto fixo \eqref{2a}}
+		\caption{Iteradas do método de Newton para \eqref{init} com $\tau = 0.8$}
 		\label{}
 		\begin{tabular}{|c|c|c|}
 			$n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
 			0 & 3.000000000000000  & -  \\
 			1 & 2.046457864822351  & 0.953542135177649 \\
+			% TODO: Isto tá certo?... 2 e depois 6 e depois 5?
    			2 & 6.176319696392767  & 4.12986183157042 \\
    			3 & 5.110330190541037  & 1.06598950585173 \\
    			4 & 4.274219056427226  & 0.836111134113811 \\
