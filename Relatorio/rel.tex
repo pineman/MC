@@ -322,7 +322,6 @@
 			2 & 0.004457019736082 & 0.077458574287344 & 0.023394802475624e3 \\
 			3 & 0.001218451139231 & 0.076084871362003 & 0.296673459104577e3 \\
 			4 & 0.000334315531198 & 0.075682869509848 & 3.878641714344468e3 \\
-		% btw pineman trocaste as colunas. O Morais disse para avisar.
 		% TODO: na última linha fica x_6 - x_6 = 0. é suposto ficar assim?
 		\end{tabular}
 	\end{table}
@@ -337,10 +336,25 @@
 	% METER FORMULA FIM PAG. 46/INC 47
 
 \subsubsection*{ii.)}
-	$$g'(\lambda_n) = -0.076150166$$
+	\par
+	O valor teórico de $K_\infty$ é:
+
+	$$K_\infty = |g'(\lambda_n)| = 0.076150166$$
+
+	\par
+	O que está perto da aproximação obtida em i), $0.075682869509848$.
 
 \subsection*{f)}
-	hello hello
+	\par
+	Para $\alpha = -0.02$:
+	$$g'(-3) = 0.8125$$.
+
+	\par
+	Para $\alpha = -0.1$:
+	$$g'(-3) = 0.0254$$
+
+	No primeiro caso, a derivada em $\lambda = -3$ é superior. Logo, a convergência para $\alpha = -0.02$ será mais rápida ($K_\infty$ será menor).
+
 
 \section{Pergunta 3}
 \subsection*{a)}
@@ -391,7 +405,7 @@
 	Neste caso particular, sabemos que a segunda derivada é sempre > 0 no intervalo, assim também esta condição se verifica.
 	\end{enumerate}
 
-	Escolhamos, ao acaso, o ponto x = 3. f(3) = TODO (falta-me o resultado porque sou preguiçosa) > 0 , logo há convergência para esse ponto.
+	Escolhamos, ao acaso, o ponto x = 3. f(3) > 0 , logo há convergência para esse ponto.
 
 	A ordem de convergência também pode ser determinada rapidamente. Basta saber qual é a primeira derivada que não se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo, podemos ter já a certeza que este método, nestas condições e situação presente, tem convergência quadrática.
 
