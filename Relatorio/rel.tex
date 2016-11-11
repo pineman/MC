@@ -356,35 +356,29 @@
 	\par
 	É necessário que num intervalo haja uma raiz (i), que seja única (ii) e não haja inversões de concavidades (iii),
 	percebe-se porquê pensando no funcionamento geométrico do método - havendo inversão de concavidade, pode
-	acontecer que as retas tangentes vão começar a fazer o método tender para outra raiz ou, pelo menos, para
-	algum sítio indesejado.
-
-	\begin{enumerate}[i]
-	\item $f(a)*f(b) < 0$
-	\par
-	Este a e b são os limites inferior e superior, respetivamente, do nosso intervalo.
-	%(escolhe aqui dois pontos que façam isto... dois jeitosinhos, tipo 2 e 5.(deve resultar com estes até :P)
-
-	\item $f'(x) \neq 0 \! \forall \! x \in I$. Sendo a segunda derivada sempre maior que 0, a derivada é crescente.
-	para x = 0, f'(0) = 0, logo, para x > 0 não haverá mais zeros na derivada e cumpre-se também esta condição num intervalo positivo.
-
-	\item $f''(x) \geqslant 0 \vee f''(x) \leqslant 0 \! \forall \! x \in I$, para não haverem as mudanças de concavidade.
-	Neste caso em que a função á sabemos que a segunda derivada é sempre > 0 no intervalo, assim também esta condição se verifica.
-	\end{enumerate}
+	acontecer que as retas tangentes vão começar a fazer o método tender para outra raiz ou para qualquer outro sítio inesperado.
 	
-	Neste caso, apenas precisamos de provar a convergência para um ponto, pelo o que verificar que os extremos do intervalo também são convergentes é desnecessário.
+	Neste caso, apenas precisamos de provar a convergência para um ponto, pelo o que verificar que os extremos do intervalo também são convergentes é desnecessário. Assim, é apenas preciso verificarem-se as seguintes condições para o ponto:
 
-	Para isso, é
-	necessário que o valor da função no ponto multiplicado ao valor da segunda derivada seja maior ou igual a 0.
-	o valor da segunda derivada é sempre maior que 0, logo, basta saber o valor da função no ponto. Escolhamos, 
-	ao acaso, o ponto x = 3. f(3) = (mete aqui o resultado) > 0 , logo, há convergência para esse ponto.
+	\begin{enumerate}[i)]
+	\item $f(a)*f(b) < 0$, em que a e b são os limites inferior e superior, respetivamente do intervalo.
+	Escolhendo dois pontos, $x_1 = 2$ e $x_2 = 5$, tem-se $f(x_1) * f(x_2) = $, verificando-se a condição. 
 
-	A ordem de convergência também pode ser determinada rapidamente. Basta saber qual é a primeira derivada que não 
-	se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo, podemos ter já a 
-	certeza que este método, nestas condições e situação presente, tem convergência quadrática.
+	\item $f'(x) \neq 0 \> \forall \> x \in I$. A função não pode ser constante, para qualquer x.
+	A derivada da função a estudar é sempre maior que 0, ou seja, f(x) é crescente. Sendo a segunda derivada sempre maior que 0, a derivada também é crescente.
+
+	\item $f''(x) \geqslant 0 \vee f''(x) \leqslant 0 \> \forall \> x \in I$, ou seja, a sentido da concavidade tem de ser constante no intervalo.
+	Neste caso particular, sabemos que a segunda derivada é sempre > 0 no intervalo, assim também esta condição se verifica.
+	\end{enumerate}
+
+	Escolhamos, ao acaso, o ponto x = 3. f(3) = (falta-me o resultado porque sou preguiçosa) > 0 , logo há convergência para esse ponto.
+
+	A ordem de convergência também pode ser determinada rapidamente. Basta saber qual é a primeira derivada que não se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo, podemos ter já a certeza que este método, nestas condições e situação presente, tem convergência quadrática.
 
 \section{Pergunta 4}
-\par Para uma aproximação inicial $\lambda _0 = 3$ e um $\alpha = 0.05$ obtem-se uma aproximação 3.689548652886207 do valor da raiz positiva $z_2$ em 13 iterações.
+	\par Para uma aproximação inicial $\lambda _0 = 3$ e um $\alpha = 0.05$ obtem-se uma aproximação 3.689548652886207 do valor da raiz positiva $z_2$ em 13 iterações. 
+	O método de Newton vai convergir em menos iterações do que o método do ponto fixo, visto que a ordem de convergência do método de Newton é supralinear, enquanto o método do ponto fixo converge linearmente.
+
 
 \section{Anexo}
 
