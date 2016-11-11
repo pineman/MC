@@ -109,10 +109,10 @@
 	\end{align*}
 
 	\par
+	% explicar melhor teorema de Bolzano
 	Assim, como $h(\lambda)$ é contínua, pelo teorema de Bolzano conclui-se que $h(\lambda)$ tem no mínimo duas raízes, uma positiva e uma negativa. Logo, como $h(\lambda)$ tem no máximo duas raízes, tem exatamente duas raízes.
 	\par
 	Se $\tau = 0$:
-
 	\begin{align*}
 		h(\lambda) &= \lambda + 13.5 = 0 \Leftrightarrow \\
 		\Leftrightarrow h &= -13.5
@@ -151,6 +151,7 @@
 		g''(\lambda) = 0.128cosh(0.8\lambda) > 0, \forall \lambda
 	\end{equation}
 
+	% lambda pertence a r
 	\par
 	De \eqref{2a_2nd_der} vem que $g'(\lambda)$ é estritamente crescente e que $g(\lambda)$ tem a concavidade virada para cima, $\forall \lambda$.
 
@@ -223,8 +224,8 @@
 
 	\begin{equation} \label{2a_bolz}
 	\begin{split}
-		g(0) &< 0 \\
-		g(\lambda_2) = g(.073768) &\approx -0.65006
+		f(0) &< 0 \\
+		f(\lambda_2) = f(.073768) &\approx -0.65006 (O VALOR ESTÁ MAL)
 	\end{split}
 	\end{equation}
 
@@ -238,7 +239,16 @@
 	Analogamente a 2.a), se encontrarmos um intervalo $I$ para $\lambda < 0$ tal que $|g'(\lambda)| < 1, \forall \lambda \in I \wedge \lambda_0 \in I$, sabemos que o método do ponto fixo começando em $\lambda_0$ vai convergir para a raiz negativa $z_1$, sendo este um ponto fixo atrator.
 
 	\par
-	Sabemos que no intervalo $[\lambda_1, 0] = I$:
+	
+	\begin{align*}
+		|g'(\lambda)| &< 1 \Leftrightarrow \\ &\Leftrightarrow
+		(g'(\lambda) > -1 \wedge g'(\lambda) < 1) \wedge \lambda < 0 \Leftrightarrow \\ &\Leftrightarrow
+		(\lambda > \lambda_1 \wedge \lambda < \lambda_2) \wedge \lambda < 0 \\ &\Leftrightarrow
+		(\lambda > -3.96169 \wedge \lambda < .073768) \wedge \lambda < 0  \stepcounter{equation} \\ &\Leftrightarrow 
+		0 < \lambda < -3.96169 \tag{\theequation}\label{2a_cond}
+	\end{align*}
+	
+	Desta inequação resulta que no intervalo $[\lambda_1, 0] = I$:
 		$$|g'(\lambda)| < 1, \forall \lambda \in I$$
 
 	\par
@@ -263,19 +273,21 @@
 		\label{2d_table}
 		\begin{tabular}{|c|c|c|}
 			$n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
-			0& -3.000000000000000 & -  \\
-			1& -3.138610566606898 & 0.138610566606898 \\
-			2& -3.135043175725743 & 0.003567390881155 \\
-			3& -3.135319148437489 & 0.000275972711746 \\
-			4& -3.135298158933368 & 0.000020989504121 \\
-			5& -3.135299757437974 & 0.000001598504606 \\
-			6& -3.135299635712395 & 0.000000121725579 \\
+			0& -3.000000000000000 & 0.138610566606898 \\
+			1& -3.138610566606898 & 0.003567390881155 \\
+			2& -3.135043175725743 & 0.000275972711746 \\
+			3& -3.135319148437489 & 0.000020989504121 \\
+			4& -3.135298158933368 & 0.000001598504606 \\
+			5& -3.135299757437974 & 0.000000121725579 \\
+			6& -3.135299635712395 & - \\
 		\end{tabular}
 	\end{table}
 
 \subsection*{e)}
 	\subsubsection*{i.)}
 
+	%formula da ordem de convergência
+	
 	\begin{table}[H]
 		\setlength{\tabcolsep}{0.5cm} %padding das colunas
 		\renewcommand{\arraystretch}{1.5} %padding das linhas
@@ -284,12 +296,13 @@
 		\label{2e_table}
 		\begin{tabular}{c|c|c|c}
 			$n$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
-			0 & 0.000018086596993e4 & 0.024471099844945 & 0.009001228832726 \\
-			1 & 0.002339480247567e4 & 0.077458574287488 & 0.004457019736090 \\
-			2 & 0.029667345911030e4 & 0.076084871363603 & 0.001218451139258 \\
-			3 & 0.387864171416792e4 & 0.075682869508125 & 0.000334315531194 \\
-			4 & 5.581498558226427e4 & 0.082426400103842 & 0.000100166867144 \\
+			0 & 0.009001228832726 & 0.024471099844945 & 0.000018086596993e4 \\
+			1 & 0.004457019736090 & 0.077458574287488 & 0.002339480247567e4 \\
+			2 & 0.001218451139258 & 0.076084871363603 & 0.029667345911030e4 \\
+			3 & 0.000334315531194 & 0.075682869508125 & 0.387864171416792e4 \\
+			4 & 0.000100166867144 & 0.082426400103842 & 5.581498558226427e4 \\
 			5 & 0                   & 0                 & 0 \\
+		% btw pineman trocaste as colunas. O Morais disse para avisar.
 		% TODO: na última linha fica x_6 - x_6 = 0. é suposto ficar assim?
 		\end{tabular}
 	\end{table}
@@ -301,10 +314,10 @@
 	% de este resultado. Eu mexi no sucessao_de_erros.m para incluir mais
 	% termos (são 6 e antes dava 5) e ainda por cima os primeiros dois eram iguais.
 	% fodi alguma coisa?
-	$$g'(\lambda_n) = -0.076150166$$
+	% METER FORMULA FIM PAG. 46/INC 47
 
 \subsubsection*{ii.)}
-	hello hello
+	$$g'(\lambda_n) = -0.076150166$$
 
 \subsection*{f)}
 	hello hello
@@ -319,17 +332,17 @@
 		\label{}
 		\begin{tabular}{|c|c|c|}
 			$n$ & $\lambda _n$ &  $| \lambda _{n+1} - \lambda _n |$ \\\hline
-			0 & 3.000000000000000  & -  \\
-			1 & 2.046457864822351  & 0.953542135177649 \\
+			0 & 3.000000000000000  & 0.953542135177649  \\
+			1 & 2.046457864822351  & 4.12986183157042 \\
 			% TODO: Isto tá certo?... 2 e depois 6 e depois 5?
-   			2 & 6.176319696392767  & 4.12986183157042 \\
-   			3 & 5.110330190541037  & 1.06598950585173 \\
-   			4 & 4.274219056427226  & 0.836111134113811 \\
-   			6 & 3.812580580130441  & 0.461638476296785 \\
-   			7 & 3.695808274249095  & 0.116772305881346 \\
-   			8 & 3.689565626643406  & 0.00624264760568893 \\
-   			9 & 3.689548798887311  & 1.68277560947949e-05 \\
-   			10 & 3.689548798765438 & 1.21873178215992e-10
+   			2 & 6.176319696392767  & 1.06598950585173 \\
+   			3 & 5.110330190541037  & 0.836111134113811 \\
+   			4 & 4.274219056427226  & 0.461638476296785 \\
+   			6 & 3.812580580130441  & 0.116772305881346 \\
+   			7 & 3.695808274249095  & 0.00624264760568893 \\
+   			8 & 3.689565626643406  & 1.68277560947949e-05 \\
+   			9 & 3.689548798887311  & 1.21873178215992e-10 \\
+   			10 & 3.689548798765438 & - \\
 		\end{tabular}
 	\end{table}
 
@@ -337,9 +350,41 @@
 	O método de Newton convergiu para a raiz positiva, a partir da aproximação inicial $x_0 = 3$ em 9 iterações.
 
 \subsection*{b)}
+	\par
+	O método de Newton converge se forem cumpridas condições suficientes para a sua convergência.
+
+	\par
+	É necessário que num intervalo haja uma raiz (i), que seja única (ii) e não haja inversões de concavidades (iii),
+	percebe-se porquê pensando no funcionamento geométrico do método - havendo inversão de concavidade, pode
+	acontecer que as retas tangentes vão começar a fazer o método tender para outra raiz ou, pelo menos, para
+	algum sítio indesejado.
+
+	\begin{enumerate}[i]
+	\item $f(a)*f(b) < 0$
+	\par
+	Este a e b são os limites inferior e superior, respetivamente, do nosso intervalo.
+	%(escolhe aqui dois pontos que façam isto... dois jeitosinhos, tipo 2 e 5.(deve resultar com estes até :P)
+
+	\item $f'(x) \neq 0 \! \forall \! x \in I$. Sendo a segunda derivada sempre maior que 0, a derivada é crescente.
+	para x = 0, f'(0) = 0, logo, para x > 0 não haverá mais zeros na derivada e cumpre-se também esta condição num intervalo positivo.
+
+	\item $f''(x) \geqslant 0 \vee f''(x) \leqslant 0 \! \forall \! x \in I$, para não haverem as mudanças de concavidade.
+	Neste caso em que a função á sabemos que a segunda derivada é sempre > 0 no intervalo, assim também esta condição se verifica.
+	\end{enumerate}
+	
+	Neste caso, apenas precisamos de provar a convergência para um ponto, pelo o que verificar que os extremos do intervalo também são convergentes é desnecessário.
+
+	Para isso, é
+	necessário que o valor da função no ponto multiplicado ao valor da segunda derivada seja maior ou igual a 0.
+	o valor da segunda derivada é sempre maior que 0, logo, basta saber o valor da função no ponto. Escolhamos, 
+	ao acaso, o ponto x = 3. f(3) = (mete aqui o resultado) > 0 , logo, há convergência para esse ponto.
+
+	A ordem de convergência também pode ser determinada rapidamente. Basta saber qual é a primeira derivada que não 
+	se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo, podemos ter já a 
+	certeza que este método, nestas condições e situação presente, tem convergência quadrática.
 
 \section{Pergunta 4}
-\par Para uma aproximação inicial $\lambda _0 = 3$ e um $\alpha = 0.05$ obtem-se uma aproximação 3.689548652886207 do valor da raiz posutiva $z_2$ em 13 iterações.
+\par Para uma aproximação inicial $\lambda _0 = 3$ e um $\alpha = 0.05$ obtem-se uma aproximação 3.689548652886207 do valor da raiz positiva $z_2$ em 13 iterações.
 
 \section{Anexo}
 
