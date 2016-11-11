@@ -1,0 +1,10 @@
+1) Anexar código comentado no .tex
+2) Imprimir o .pdf
+3) Arranjar um envelope muita grande para pôr lá o relatório
+4) Escrever nome e número dos elementos do grupo e um email
+5) Entregar a:
+	Dr. Jorge Tiago no Gabinete 2.07 do Pavilhão de Matemática,
+		no horário: 11h às 13h e 14h30 às 16h30.
+	Durante o horário de dúvidas (Prof. TDiogo, Gabinete 5.12, piso 5)
+
+6) Enviar os programas por email a: jftiago@math.ist.utl.pt
