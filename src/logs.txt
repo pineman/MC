@@ -1,0 +1,266 @@
+commit 26a0e8c79cbab569767ce80520eed893ce190cbf
+Merge: 521cd32 22727e9
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Fri Nov 11 19:45:01 2016 +0000
+
+    Merge branch 'master' of https://www.github.com/joajfreitas/MC
+
+commit 22727e91ad7e5a82db78cc86f47b2b07698ee29b
+Author: cguariglia <x.carolina97@gmail.com>
+Date:   Fri Nov 11 19:41:22 2016 +0000
+
+    4 e 3b), faltam-me valores nesta
+
+commit 521cd32c74115b7eb14e0ca4512007365cc39a7c
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Fri Nov 11 19:22:41 2016 +0000
+
+    COMMENTS!
+
+commit 4aaeb8ac2bc2283ddd031f670fb4b9937120e338
+Merge: cd72229 76e25a8
+Author: cguariglia <x.carolina97@gmail.com>
+Date:   Fri Nov 11 17:38:33 2016 +0000
+
+    Merge branch 'master' of https://github.com/joajfreitas/MC
+
+commit cd722294ad55e20fa821a91b29dc6ddbea4eed27
+Author: cguariglia <x.carolina97@gmail.com>
+Date:   Fri Nov 11 17:38:03 2016 +0000
+
+    w/e
+
+commit 76e25a80a311a2f56ed50173d5fe734c51d52815
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Fri Nov 11 15:37:30 2016 +0000
+
+    how-to entregar
+    
+    I <3 envelopes
+
+commit 0ff6bcf08fbb150411e3cb186895a3bca1130405
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Tue Nov 8 00:01:53 2016 +0000
+
+    3.b) explicação do morais
+
+commit 44402c505ec3d0a1075b28e587a0f4dd5325336b
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Sun Nov 6 16:02:18 2016 +0000
+
+    fixed g7 and g7 derivative
+
+commit 3ef06461d8dbe9dfb984753c022d64a814afda57
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Sun Nov 6 15:12:40 2016 +0000
+
+    Sorry: Anexos e identificação do Morais
+
+commit b94db677a6d5ba5ee6bbe9ddecc654e77873f2eb
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Sun Nov 6 13:27:43 2016 +0000
+
+    small fixes
+
+commit 90d441f1d89b7aa5ed1b0d7e60ce2dac9849281a
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Sun Nov 6 01:26:29 2016 +0000
+
+    Anexos e identificação do morais
+
+commit e2e3a67d733b157b6481bf6cc36aaaacfb0d8572
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Sun Nov 6 01:25:39 2016 +0000
+
+    python para ponto fixo e sucessao de erros
+
+commit affe416841ca06d7aa86e2d914528b4ea2c04e32
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Sat Nov 5 00:24:53 2016 +0000
+
+    add 3.a) table
+
+commit 55f633200b2f21b083782840868f4ecd20159a42
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Fri Nov 4 18:31:39 2016 +0000
+
+    completar 2.a), 2.b). need help 2.e) i)
+
+commit 741487afebb5bf80bed5395203d9f281f2ea18c5
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Thu Nov 3 18:48:29 2016 +0000
+
+    tabela 2e) i)
+
+commit 4495111ca43cefad3de51a3aecc99eaba2fa36fd
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Thu Nov 3 17:09:30 2016 +0000
+
+    fixado sucessão de erros e update ao mc.txt
+
+commit 1eac4a697138d7c2d1e924e261f4a983136fef2b
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Thu Nov 3 17:04:57 2016 +0000
+
+    add enunciado and mc.txt
+
+commit 20e7ad576b285bd598c8ad0e1785486a113a9eb1
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Thu Nov 3 16:59:22 2016 +0000
+
+    fixed: sucessão de erros length
+
+commit f15feea8913de1390cea5d57417eb10bc38f46cf
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Thu Nov 3 00:34:51 2016 +0000
+
+    Tirar mathsizes. please check TODO
+
+commit e203540a653bd98a9f4022d36859bf09dd45fa10
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Thu Nov 3 00:32:41 2016 +0000
+
+    Outra tabela
+
+commit 71bb97e6a0d4b787f06640aacc63fbd5e8ed820e
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Wed Nov 2 23:41:17 2016 +0000
+
+    I did a table
+
+commit 7c576c9df1f97e26b6a75d7d6beff26198b52fcf
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Wed Nov 2 20:20:12 2016 +0000
+
+    adicionar a carolina na capa
+
+commit 3b9ed368a7fb6a9cdbc2b1cd9567b035d75ed738
+Author: pineman <joao.castropinheiro@gmail.com>
+Date:   Wed Nov 2 20:01:28 2016 +0000
+
+    pergunta 2a) TODO
+
+commit 5cd5cb2a3481f278792ad057aa72efdc0ab3fa53
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Mon Oct 31 21:37:55 2016 +0000
+
+    pergunta 1
+
+commit 5ac8dde9fc16eadcbd33ee158d7c04772de4b84a
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Mon Oct 31 16:53:06 2016 +0000
+
+    delete stuff
+
+commit 5c5f1d176d6b9cb73a11d1dfe6a417e765d5a9a0
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Sun Oct 30 19:25:07 2016 +0000
+
+    sources do morais
+
+commit 47a0489faaaef17f66a47f6e803b83b5a8c90214
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Thu Oct 27 21:03:16 2016 +0100
+
+    from face .. to git
+
+commit a3bb041f954b5fca2fcbf6d2afb7752898958477
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Thu Oct 27 19:39:34 2016 +0100
+
+    derivada de g
+
+commit f7ce6001ca4d7b85e16ee19d96059766670309e7
+Merge: 77be274 11c6271
+Author: Joao Miguel Calado de Freitas <ist425393@cachaca.ethscdeec.ist.utl.pt>
+Date:   Thu Oct 27 18:24:16 2016 +0100
+
+    sorry everyone
+
+commit 77be2748e8c3d82f1f22813d387273ab2af1ceae
+Author: Joao Miguel Calado de Freitas <ist425393@cachaca.ethscdeec.ist.utl.pt>
+Date:   Thu Oct 27 18:02:33 2016 +0100
+
+    2.c
+    function g and ponto fixo
+    tudo optimo
+
+commit 11c62719731de3d32f1bd623a6438dbaad2426de
+Author: soqueroprogramar <soqueroprogramar@users.noreply.github.com>
+Date:   Tue Oct 18 08:38:04 2016 +0100
+
+    Add files via upload
+
+commit 140d7f4b79025ace2b8b095379cbb317cefd5459
+Author: soqueroprogramar <soqueroprogramar@users.noreply.github.com>
+Date:   Tue Oct 18 08:37:36 2016 +0100
+
+    Delete duvidas do sopaprogramar
+
+commit 17884a1fe557eb7fe27e29e3429a7c327e9df97f
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Tue Oct 18 00:04:23 2016 +0100
+
+    please pineman deixa a capa em paz
+
+commit 43a63575d344d9ba91edec61350c6f3098092993
+Author: João Pinheiro <joao.castropinheiro@gmail.com>
+Date:   Mon Oct 17 23:50:42 2016 +0100
+
+    fix compilation step
+
+commit 6e13bf512dbce11d449b4ceff4336e76010eb3a1
+Author: João Freitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 23:42:49 2016 +0100
+
+    Fixed makefile
+    
+    Pls corram a makefile do que esta na pasta do Modelo
+
+commit c8d7a48331233cea60710e52de58eb8844f8c059
+Author: soqueroprogramar <soqueroprogramar@users.noreply.github.com>
+Date:   Mon Oct 17 23:28:52 2016 +0100
+
+    Create duvidas do sopaprogramar
+
+commit e4c19d6f696fb95f1c8c429c7b5bf1c9e2d2a3c2
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 22:54:34 2016 +0100
+
+    pergunta 1: limites e derivadas
+
+commit 6058f36ddd746c996a5f81234a4ddb1a3d69ba1d
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 16:47:23 2016 +0100
+
+    capa do relatorio
+
+commit 7aec2240017575c4cc0f312810f2a42d677e2fb6
+Author: joajfreitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 16:39:31 2016 +0100
+
+    relatorio
+
+commit 7203f54b630a456997db7d53c97e1da8e0ea4753
+Author: João Freitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 16:30:17 2016 +0100
+
+    Create .gitignore
+
+commit 7fdc54afae42baf5d8a1784e959f3db0c3fad5fc
+Author: João Freitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 16:29:26 2016 +0100
+
+    Update README.md
+
+commit a6eee5fe9f18adf8accae4cf854887292a10e518
+Author: João Freitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 16:27:14 2016 +0100
+
+    Update README.md
+
+commit f54b4031d6f37271c160b669b7ed20f90d66b16b
+Author: João Freitas <joaj.freitas@gmail.com>
+Date:   Mon Oct 17 16:24:14 2016 +0100
+
+    Initial commit

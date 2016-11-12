@@ -315,14 +315,13 @@
 		\centering
 		\caption{Sucessão de erros para ordem de convergência $p = \frac{1}{2}, 1, 2$}
 		\label{2e_table}
-		\begin{tabular}{|c|c|c|c}
-			$n$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^2}$ \\\hline
-			0 & 0.009001228832727 & 0.024471099844949 & 0.000180865969935e3 \\
-			1 & 0.009001228832727 & 0.024471099844949 & 0.000180865969935e3 \\
-			2 & 0.004457019736082 & 0.077458574287344 & 0.023394802475624e3 \\
-			3 & 0.001218451139231 & 0.076084871362003 & 0.296673459104577e3 \\
-			4 & 0.000334315531198 & 0.075682869509848 & 3.878641714344468e3 \\
-		% TODO: na última linha fica x_6 - x_6 = 0. é suposto ficar assim?
+		\begin{tabular}{c|c|c|c}
+			$n$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
+			0 & 0.009001228832726 & 0.024471099844945 & 0.000018086596993e4 \\
+			1 & 0.004457019736090 & 0.077458574287488 & 0.002339480247567e4 \\
+			2 & 0.001218451139258 & 0.076084871363603 & 0.029667345911030e4 \\
+			3 & 0.000334315531194 & 0.075682869508125 & 0.387864171416792e4 \\
+			4 & 0.000100166867144 & 0.082426400103842 & 5.581498558226427e4 \\
 		\end{tabular}
 	\end{table}
 
@@ -339,10 +338,12 @@
 	\par
 	O valor teórico de $K_\infty$ é:
 
-	$$K_\infty = |g'(\lambda_n)| = 0.076150166$$
+	%TODO: inserir formula e lambda_n
+	$$K_\infty = |g'(\lambda_n)| = 0.0761501943658923$$
 
+	%TODO: explicaçao do erro
 	\par
-	O que está perto da aproximação obtida em i), $0.075682869509848$.
+	O que está perto da aproximação obtida em i), $0.082426400103842$.
 
 \subsection*{f)}
 	\par
@@ -422,5 +423,20 @@
 
 \par{Metodo Newton}
 	\lstinputlisting{../src/metodo_newton.m}
+
+\newpage
+\par{Sucessão de erros}
+	\lstinputlisting{../src/sucessao_de_erros.m}
+
+\par{Função iteradora \eqref{2a}}
+	\lstinputlisting{../src/g.m}
+
+\par{Função \eqref{init}}
+	\lstinputlisting{../src/f.m}
+
+\par{Derivada da função \eqref{init}}
+	\lstinputlisting{../src/fderivative.m}
+
+
 
 \end{document}
