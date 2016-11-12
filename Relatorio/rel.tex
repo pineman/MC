@@ -257,7 +257,7 @@
 
 \subsection*{b)}
 	\par
-	Analogamente a 2.a), se encontrarmos um intervalo $I$ para $\lambda < 0$ tal que $|g'(\lambda)| < 1, \forall \lambda \in I \wedge \lambda_0 \in I$, sabemos que o método do ponto fixo começando em $\lambda_0$ vai convergir para a raiz negativa $z_1$, sendo este um ponto fixo atrator.
+	Analogamente a 2.a), se encontrarmos um intervalo $I$ para $\lambda < 0$ tal que $|g'(\lambda)| < 1, \forall \> \lambda \in I \wedge \lambda_0 \in I$, sabemos que o método do ponto fixo começando em $\lambda_0$ vai convergir para a raiz negativa $z_1$, sendo este um ponto fixo atrator.
 
 	\par
 
@@ -270,7 +270,7 @@
 	\end{align*}
 
 	Desta inequação resulta que no intervalo $[\lambda_1, 0] = I$:
-		$$|g'(\lambda)| < 1, \forall \lambda \in I$$
+		$$|g'(\lambda)| < 1, \forall \> \lambda \in I$$
 
 	\par
 	Assim, resta provar que $g(\lambda)$ tem um ponto fixo no intervalo $I$, ou seja, interseta a reta $y = x$ para algum $\lambda \in I$.
@@ -316,8 +316,8 @@
 		\caption{Sucessão de erros para ordem de convergência $p = \frac{1}{2}, 1, 2$}
 		\label{2e_table}
 		\begin{tabular}{c|c|c|c}
-			$n$ & $\frac{|e_{n+1}|}{|e_n|^2}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ \\\hline
-			0 & 0.009001228832727 & 0.024471099844949 & 0.000180865969935e3 \\
+			$n$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^2}$ \\\hline
+			0 & 0.009001228832727 & 0.024471099844949 & 0.000180865969935e3 \\\hline
 			1 & 0.009001228832727 & 0.024471099844949 & 0.000180865969935e3 \\
 			2 & 0.004457019736082 & 0.077458574287344 & 0.023394802475624e3 \\
 			3 & 0.001218451139231 & 0.076084871362003 & 0.296673459104577e3 \\
@@ -395,22 +395,23 @@
 	Neste caso, apenas precisamos de provar a convergência para um ponto, pelo o que verificar que os extremos do intervalo também são convergentes é desnecessário. Assim, é apenas preciso verificarem-se as seguintes condições para o ponto:
 
 	\begin{enumerate}[i)]
-	\item $f(a)*f(b) < 0$, em que a e b são os limites inferior e superior, respetivamente do intervalo.
-	Escolhendo dois pontos, $x_1 = 2$ e $x_2 = 5$, tem-se $f(x_1) * f(x_2) = $, verificando-se a condição.
+	\item $h(a)*h(b) < 0$, em que a e b são os limites inferior e superior, respetivamente do intervalo.
+	Escolhendo dois pontos, $x_1 = 2$ e $x_2 = 5$, tem-se $h(2) * h(5) \approxeq -421.1723 < 0 $, verificando-se a condição.
 
-	\item $f'(x) \neq 0 \> \forall \> x \in I$. A função não pode ser constante, para qualquer x.
+	\item $h'(x) \neq 0 \> \forall \> x \in I$. A função não pode ser constante, para qualquer x.
 	A derivada da função a estudar é sempre maior que 0, ou seja, f(x) é crescente. Sendo a segunda derivada sempre maior que 0, a derivada também é crescente.
 
-	\item $f''(x) \geqslant 0 \vee f''(x) \leqslant 0 \> \forall \> x \in I$, ou seja, a sentido da concavidade tem de ser constante no intervalo.
-	Neste caso particular, sabemos que a segunda derivada é sempre > 0 no intervalo, assim também esta condição se verifica.
+	\item $h''(x) \geqslant 0 \vee h''(x) \leqslant 0 \> \forall \> x \in I$, ou seja, a sentido da concavidade tem de ser constante no intervalo.
+	Neste caso particular, sabemos que a segunda derivada é sempre positiva no intervalo, concluindo-se que também esta condição se verifica.
 	\end{enumerate}
 
-	Escolhamos, ao acaso, o ponto x = 3. f(3) > 0 , logo há convergência para esse ponto.
+	Escolhamos, ao acaso, o ponto $x = 3$. $h(3) \aprox 7.38611 > 0$, logo há convergência para esse ponto.
 
-	A ordem de convergência também pode ser determinada rapidamente. Basta saber qual é a primeira derivada que não se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo, podemos ter já a certeza que este método, nestas condições e situação presente, tem convergência quadrática.
+	A ordem de convergência também pode ser determinada rapidamente, descobrindo qual a primeira derivada que não se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo podemos concluir que este método, nestas condições e situação presente, tem convergência quadrática.
 
 \section{Pergunta 4}
 	\par Para uma aproximação inicial $\lambda _0 = 3$ e um $\alpha = 0.05$ obtem-se uma aproximação 3.689548652886207 do valor da raiz positiva $z_2$ em 13 iterações.
+	
 	O método de Newton vai convergir em menos iterações do que o método do ponto fixo, visto que a ordem de convergência do método de Newton é supralinear, enquanto o método do ponto fixo converge linearmente.
 
 
