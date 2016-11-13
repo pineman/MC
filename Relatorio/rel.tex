@@ -208,6 +208,9 @@
 		w - w^{-1} = \frac{-1.9}{.08} = -23.75 \Leftrightarrow \\ &\Leftrightarrow
 		w.w - 23.75.w - w^{-1}.w = 0 \Leftrightarrow \\ &\Leftrightarrow
 		w^2 + 23.75w - 1 = 0 \Leftrightarrow \\ &\Leftrightarrow
+		w = \frac{-23.75 \pm \sqrt{(-23.75)^2 - 4 * 1 * (-1)}}{2 * 1}
+		\Leftrightarrow \\
+		&\Leftrightarrow
 		w = \frac{-95 + \sqrt{9089}}{8} \vee w = \frac{-95 - \sqrt{9089}}{8} \Leftrightarrow \\ &\Leftrightarrow
 		w \approx 0.04203 \vee w \approx -23.792 \text{  (impossível, $w = e^{0.8\lambda_1}$)} \Leftrightarrow \\ &\Leftrightarrow
 		e^{0.8\lambda_1} = \frac{\sqrt{9089} - 95}{8} \Leftrightarrow \\ &\Leftrightarrow
@@ -335,12 +338,13 @@
 	\par
 	Aplicando diretamente a fórmula com $p = 1$, pode-se concluir que o valor teórico de $K_\infty$ é:
 
-	%TODO: inserir lambda_n
-	$$K_\infty = \frac{|g^{(p)}(\lambda_n)|}{p!} = |g'(\lambda_n)| = 0.0761501943658923$$
+	$$ k_{\infty} = \lim_{n \to \infty} \frac{|z - x_{n+1}|}{|z-x_n|^p} = \frac{|g^{(p)}(z)|}{p!}$$
+	$$K_\infty = |g'(\lambda_n)| = 0.0761501943658923$$
 
-	%TODO: explicaçao do erro (mas o erro não esta assim tão mau. Ou está? --C)
-	\par
-	Este resultado está próximo da aproximação obtida em i), $0.082426400103842$, logo o programa escrito nessa alínea pode ser considerado adequado.
+	\par A aproximação do coeficiente assimptótico de convergência obtido é
+	$0.082426400103842$, apresentando um erro considerável em relação ao valor
+	teórico. Tal deverá originar do facto de utilizarmos um valor
+	aproximado da raiz com uma imprecisão de $\pm 10^6$.
 
 \subsection*{f)}
 	\par
