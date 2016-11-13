@@ -306,16 +306,14 @@
 
 \subsection*{e)}
 	\subsubsection*{i.)}
-
-	%formula da ordem de convergência
-
+	
 	\begin{table}[H]
 		\setlength{\tabcolsep}{0.5cm} %padding das colunas
 		\renewcommand{\arraystretch}{1.5} %padding das linhas
 		\centering
 		\caption{Sucessão de erros para ordem de convergência $p = \frac{1}{2}, 1, 2$}
 		\label{2e_table}
-		\begin{tabular}{c|c|c|c}
+		\begin{tabular}{|c|c|c|c|}
 			$n$ & $\frac{|e_{n+1}|}{|e_n|^{\frac{1}{2}}}$ &  $\frac{|e_{n+1}|}{|e_n|^1}$ & $\frac{|e_{n+1}|}{|e_n|^{2}}$ \\\hline
 			0 & 0.009001228832726 & 0.024471099844945 & 0.000018086596993e4 \\
 			1 & 0.004457019736090 & 0.077458574287488 & 0.002339480247567e4 \\
@@ -326,24 +324,23 @@
 	\end{table}
 
 	\par
-	A sucessão de erros que parece convergir para um $K_\infty > 0$ é a coluna de ordem de convergência $p = 1$.
+	A sucessão de erros que parece convergir para um $K_\infty > 0$ é a coluna de ordem de convergência $p = 1$. Como $p = 1$ e $K_\infty < 1$ pode dizer-se que a convergência é linear.
 
 	% o último termo da sucessão de erros de p = 1 fica mais diferente
 	% de este resultado. Eu mexi no sucessao_de_erros.m para incluir mais
 	% termos (são 6 e antes dava 5) e ainda por cima os primeiros dois eram iguais.
 	% fodi alguma coisa?
-	% METER FORMULA FIM PAG. 46/INC 47
 
 \subsubsection*{ii.)}
 	\par
-	O valor teórico de $K_\infty$ é:
+	Aplicando diretamente a fórmula com $p = 1$, pode-se concluir que o valor teórico de $K_\infty$ é:
 
-	%TODO: inserir formula e lambda_n
-	$$K_\infty = |g'(\lambda_n)| = 0.0761501943658923$$
+	%TODO: inserir lambda_n
+	$$K_\infty = \frac{|g^{(p)}(\lambda_n)|}{p!} = |g'(\lambda_n)| = 0.0761501943658923$$
 
-	%TODO: explicaçao do erro
+	%TODO: explicaçao do erro (mas o erro não esta assim tão mau. Ou está? --C)
 	\par
-	O que está perto da aproximação obtida em i), $0.082426400103842$.
+	Este resultado está próximo da aproximação obtida em i), $0.082426400103842$, logo o programa escrito nessa alínea pode ser considerado adequado.
 
 \subsection*{f)}
 	\par
@@ -396,25 +393,40 @@
 	Neste caso, apenas precisamos de provar a convergência para um ponto, pelo o que verificar que os extremos do intervalo também são convergentes é desnecessário. Assim, é apenas preciso verificarem-se as seguintes condições para o ponto:
 
 	\begin{enumerate}[i)]
-	\item $h(a)*h(b) < 0$, em que a e b são os limites inferior e superior, respetivamente do intervalo.
-	Escolhendo dois pontos, $x_1 = 2$ e $x_2 = 5$, tem-se $h(2) * h(5) \approxeq -421.1723 < 0 $, verificando-se a condição.
+	\item $f(a)*f(b) < 0$, em que a e b são os limites inferior e superior, respetivamente do intervalo.
+	Escolhendo dois pontos, $x_1 = 2$ e $x_2 = 5$, tem-se $f(2) * f(5) \approxeq -421.1723 < 0 $, verificando-se a condição.
 
-	\item $h'(x) \neq 0 \> \forall \> x \in I$. A função não pode ser constante, para qualquer x.
-	A derivada da função a estudar é sempre maior que 0, ou seja, f(x) é crescente. Sendo a segunda derivada sempre maior que 0, a derivada também é crescente.
+	\item $f'(x) \neq 0 \> \forall \> x \in I$. A função não pode ser constante, para qualquer x.
+	A derivada da função a estudar é sempre maior que 0, ou seja, $f(x)$ é crescente. Sendo a segunda derivada sempre maior que 0, a derivada também é crescente.
 
-	\item $h''(x) \geqslant 0 \vee h''(x) \leqslant 0 \> \forall \> x \in I$, ou seja, a sentido da concavidade tem de ser constante no intervalo.
+	\item $f''(x) \geqslant 0 \vee f''(x) \leqslant 0 \> \forall \> x \in I$, ou seja, a sentido da concavidade tem de ser constante no intervalo.
 	Neste caso particular, sabemos que a segunda derivada é sempre positiva no intervalo, concluindo-se que também esta condição se verifica.
 	\end{enumerate}
 
-	Escolhamos, ao acaso, o ponto $x = 3$. $h(3) \approx 7.38611 > 0$, logo há convergência para esse ponto.
+	Escolhamos, ao acaso, o ponto $x = 3$. $f(3) \approx 7.38611 > 0$, logo há convergência para esse ponto.
 
 	A ordem de convergência também pode ser determinada rapidamente, descobrindo qual a primeira derivada que não se anula no intervalo. Sabemos desde já que a segunda derivada é sempre maior que 0, logo podemos concluir que este método, nestas condições e situação presente, tem convergência quadrática.
 
 \section{Pergunta 4}
-	\par Para uma aproximação inicial $\lambda _0 = 3$ e um $\alpha = 0.05$ obtem-se uma aproximação 3.689548652886207 do valor da raiz positiva $z_2$ em 13 iterações.
+	\par Partindo do raciocínio usado nas perguntas 2a) e  2b), pode-se chegar à conclusão que para $\alpha = 0.05$, $|g'(\lambda)| < 1$ num intervalo que contém a raiz positiva e que partindo de um $\lambda_0 = 3$ contido nesse intervalo é possível usar o método do ponto fixo pois este vai convergir para a raiz.
 	
-	O método de Newton vai convergir em menos iterações do que o método do ponto fixo, visto que a ordem de convergência do método de Newton é supralinear, enquanto o método do ponto fixo converge linearmente.
+	\begin{align*}
+		|g'(\lambda)| &< 1 \Leftrightarrow \\ &\Leftrightarrow
+		-1 < 1.05 - 0.08sinh(0.8\lambda) < 1
+	\end{align*}
+	
+	Como $g''(\lambda) < 0 \> \forall \> \lambda$,  $|g'(\lambda)| = 1 \Leftrightarrow \lambda = 4.921$ e $|g'(\lambda)| = -1 \Leftrightarrow \lambda = 0.625$:
+	
+	\begin{align*}
+		0.625 < |g'(\lambda)| < 4.921
+	\end{align*}
+	
+	\par Como foi visto em fases anteriores deste trabalho, quando o módulo da derivada é menor que um num intervalo, se a função estiver definida, for de classe $C^1$ nesse intervalo, e se houver uma raiz nesse intervalo, então para qualquer aproximação inicial escolhida nesse intervalo, o método do ponto fixo vai convergir para a raiz. Logo, $\lambda = 3$ é uma aproximação aceitável. \\
+	
+	\par Provada então a validade dos valores utilizados, pode obter-se uma aproximação 3.689548652886207 do valor da raiz positiva $z_2$ em 13 iterações. O método de Newton vai convergir em menos iterações do que o método do ponto fixo, visto que a ordem de convergência do método de Newton é supralinear, enquanto o método do ponto fixo converge linearmente.
 
+
+\newpage
 
 \section{Anexo}
 
